@@ -1,2 +1,4 @@
 # cukes-test
-Ruby cakes code snippets
+Ruby cucumber code snippets for practice
+
+# Test.rb
