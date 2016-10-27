@@ -20,21 +20,32 @@
 # test_song.age
 # test_song.height
 
+# # ====
+# # Case : 3
+#
+# class Song
+#   attr_reader :duration
+#
+#   attr_writer :height
+#   MAX_DURATION  = 60
+# def how_long(duration)
+#   @new_duration = duration
+#   return @new_duration.to_i > MAX_DURATION
+#
+# end
+# end
+# song1 = Song.new()
+#
+# puts song1.how_long(61)
+# song1.height
+
 # ====
-# Case : 3
+# Case 3
 
-class Song
-  attr_reader :duration
-
-  attr_writer :height
-  MAX_DURATION  = 60
-def how_long(duration)
-  @new_duration = duration
-  return @new_duration.to_i > MAX_DURATION
-
+a = Array.new()
+a = ['a','1','test']
+puts a.length
+a.each {|string| puts "Inside for loop"}
+for i in a.each
+  puts "Inside different for loop"
 end
-end
-song1 = Song.new()
-
-puts song1.how_long(61)
-song1.height
