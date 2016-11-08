@@ -38,14 +38,39 @@
 #
 # puts song1.how_long(61)
 # song1.height
+#
+# # ====
+# # Case 3
+#
+# a = Array.new()
+# a = ['a','1','test']
+# puts a.length
+# a.each {|string| puts "Inside for loop"}
+# for i in a.each
+#   puts "Inside different for loop"
+# end
 
-# ====
-# Case 3
+# Case 4 Song list juke box
 
-a = Array.new()
-a = ['a','1','test']
-puts a.length
-a.each {|string| puts "Inside for loop"}
-for i in a.each
-  puts "Inside different for loop"
+class SongList
+  def initialize
+    @songs = Array.new
+
+  end
+  def append_to(song)
+    @songs.push(song)
+    puts "Inside append_to"
+    puts @songs
+  end
+
+  def delete_first
+    @song.shift
+    puts "Inside delete first"
+  end
+
+  def delete_last
+    @song.pop
+    puts "Inside delete last"
+  end
+
 end
